@@ -25,7 +25,7 @@ export default function ContactPage() {
                     {/* Contact Methods */}
                     <div className="space-y-8">
                         {[
-                            { icon: Mail, title: "Email Us", val: "contact@successsquad.com", link: "mailto:contact@successsquad.com", color: "text-blue-500" },
+                            { icon: Mail, title: "Email Us", val: "360.success.squad@gmail.com", link: "mailto:360.success.squad@gmail.com", color: "text-blue-500" },
                             { icon: MessageCircle, title: "WhatsApp", val: "+91 12345 67890", link: "https://wa.me/911234567890", color: "text-green-500" },
                             { icon: Phone, title: "Call Hub", val: "+91 09876 54321", link: "tel:+910987654321", color: "text-secondary" },
                         ].map((item, i) => (
@@ -37,13 +37,13 @@ export default function ContactPage() {
                                 transition={{ delay: i * 0.1 }}
                                 className="block"
                             >
-                                <Card className="flex items-center gap-6 p-8 hover:border-secondary/20 hover:scale-105 transition-all">
-                                    <div className={`w-14 h-14 rounded-2xl bg-zinc-50 flex items-center justify-center ${item.color}`}>
-                                        <item.icon size={28} />
+                                <Card className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 p-6 sm:p-8 hover:border-secondary/20 hover:scale-105 transition-all">
+                                    <div className={`shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-zinc-50 flex items-center justify-center ${item.color}`}>
+                                        <item.icon size={24} className="sm:w-7 sm:h-7" />
                                     </div>
-                                    <div>
+                                    <div className="min-w-0 flex-1">
                                         <p className="text-xs font-bold text-zinc-400 uppercase tracking-widest mb-1">{item.title}</p>
-                                        <p className="text-lg font-bold text-primary">{item.val}</p>
+                                        <p className="text-base sm:text-lg font-bold text-primary truncate sm:break-normal" title={item.val}>{item.val}</p>
                                     </div>
                                 </Card>
                             </motion.a>
