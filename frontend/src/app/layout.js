@@ -9,6 +9,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "360° Success Squad | Premium EdTech Solutions",
   description: "Find the best teachers, choose your subjects, and boost your success with 360° Success Squad.",
+  icons: {
+    icon: "/icon.svg",
+    type: "image/svg+xml",
+  },
 };
 
 export default function RootLayout({ children }) {
