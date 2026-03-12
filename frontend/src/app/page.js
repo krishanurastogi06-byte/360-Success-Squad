@@ -189,7 +189,7 @@ export default function Home() {
               </div>
 
               <Link href="/about" className="btn-primary mt-12">
-                Learn More About Us
+                Learn More About Us.
               </Link>
             </div>
           </div>
