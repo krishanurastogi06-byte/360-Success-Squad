@@ -122,6 +122,7 @@ export default function CareersPage() {
                                         <div className="space-y-2">
                                             <label className="text-sm font-bold text-primary ml-1">Primary Subject</label>
                                             <select className="w-full p-4 bg-zinc-50 rounded-2xl border-none focus:ring-2 focus:ring-secondary/20 transition-all appearance-none">
+                                                <option>Select Subject</option>
                                                 <option>Mathematics</option>
                                                 <option>Physics</option>
                                                 <option>Chemistry</option>
@@ -133,6 +134,7 @@ export default function CareersPage() {
                                         <div className="space-y-2">
                                             <label className="text-sm font-bold text-primary ml-1">Years of Experience</label>
                                             <select className="w-full p-4 bg-zinc-50 rounded-2xl border-none focus:ring-2 focus:ring-secondary/20 transition-all appearance-none">
+                                                <option>Less than 1 Year</option>
                                                 <option>1-3 Years</option>
                                                 <option>3-5 Years</option>
                                                 <option>5-10 Years</option>

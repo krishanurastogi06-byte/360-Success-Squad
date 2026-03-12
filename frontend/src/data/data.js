@@ -1,0 +1,80 @@
+export const teachersData = {
+    "1": {
+        id: "1",
+        name: "Preeti Rastogi",
+        subjects: ["Mathematics", "Social Science"],
+        rating: 4.9,
+        reviewsCount: 124,
+        experience: "10+ Years",
+        image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400",
+        about: "I am a dedicated educator with over a decade of experience in teaching complex mathematical and physical concepts. My approach focuses on conceptual clarity and real-world application, helping students excel in both school exams and competitive entrance tests.",
+        qualifications: ["PhD in Applied Mathematics", "MSc in Physics"],
+        availability: "Mon/Wed/Fri (4 PM - 8 PM)",
+        price: "₹80/hr"
+    },
+    "2": {
+        id: "2",
+        name: "Arun Sharma",
+        subjects: ["Physics", "Chemistry"],
+        rating: 4.8,
+        reviewsCount: 98,
+        experience: "8 Years",
+        image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400",
+        about: "Passionate about making science accessible and engaging. Specializing in advanced placement courses and competitive exam preparation with a track record of high-achieving students.",
+        qualifications: ["MTech in Mechanical Engineering"],
+        availability: "Tue/Thu/Sat (5 PM - 9 PM)",
+        price: "₹90/hr"
+    },
+    "3": {
+        id: "3",
+        name: "Priya Desai",
+        subjects: ["English", "History", "Political Science"],
+        rating: 4.7,
+        reviewsCount: 156,
+        experience: "12+ Years",
+        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400",
+        about: "Expert in humanities and literature, I help students develop critical thinking and articulate expression. Experienced in guiding students through complex historical events and contemporary political concepts.",
+        qualifications: ["MA in English Literature", "BEd"],
+        availability: "Mon to Fri (10 AM - 2 PM)",
+        price: "₹70/hr"
+    },
+    "4": {
+        id: "4",
+        name: "Rajesh Kumar",
+        subjects: ["Computer Science", "Information Technology"],
+        rating: 4.9,
+        reviewsCount: 210,
+        experience: "5 Years",
+        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+        about: "Software engineer turned educator. I specialize in teaching coding, web development, and algorithmic thinking to students of all levels. Learning to code is a superpower, and I'm here to help you unlock it.",
+        qualifications: ["BTech in Computer Science"],
+        availability: "Weekends (9 AM - 6 PM)",
+        price: "₹100/hr"
+    },
+    "5": {
+        id: "5",
+        name: "Sneha Patel",
+        subjects: ["Biology", "Environmental Science"],
+        rating: 4.6,
+        reviewsCount: 84,
+        experience: "7 Years",
+        image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400",
+        about: "Bringing biology to life! I focus on interactive learning and real-world biological applications to make learning engaging. Prepared numerous students for medical entrance exams.",
+        qualifications: ["MSc in Zoology", "BSc in Biology"],
+        availability: "Mon/Wed/Fri (5 PM - 9 PM)",
+        price: "₹85/hr"
+    },
+    "6": {
+        id: "6",
+        name: "Vikram Singh",
+        subjects: ["Economics", "Accountancy", "Business Studies"],
+        rating: 4.8,
+        reviewsCount: 142,
+        experience: "15+ Years",
+        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400",
+        about: "Demystifying commerce subjects for high school students. With extensive experience in both corporate sector and academics, I bring practical insights into theoretical concepts.",
+        qualifications: ["MBA in Finance", "MCom"],
+        availability: "Tue/Thu/Sat (4 PM - 8 PM)",
+        price: "₹95/hr"
+    }
+};

@@ -25,9 +25,9 @@ export default function ContactPage() {
                     {/* Contact Methods */}
                     <div className="space-y-8">
                         {[
-                            { icon: Mail, title: "Email Us", val: "360.success.squad@gmail.com", link: "mailto:360.success.squad@gmail.com", color: "text-blue-500" },
-                            { icon: MessageCircle, title: "WhatsApp", val: "+91 12345 67890", link: "https://wa.me/911234567890", color: "text-green-500" },
-                            { icon: Phone, title: "Call Hub", val: "+91 09876 54321", link: "tel:+910987654321", color: "text-secondary" },
+                            { icon: Mail, title: "Email Us", val: "success.squad360@gmail.com", link: "mailto:success.squad360@gmail.com", color: "text-blue-500" },
+                            { icon: MessageCircle, title: "WhatsApp", val: "+91 9910339011", link: "https://wa.me/9910339011", color: "text-green-500" },
+                            { icon: Phone, title: "Call Hub", val: "+91 9910339011", link: "tel:+919910339011", color: "text-secondary" },
                         ].map((item, i) => (
                             <motion.a
                                 key={item.title}

@@ -9,14 +9,13 @@ import SectionTag from "@/components/ui/SectionTag";
 import PageTransition from "@/components/ui/PageTransition";
 import { cn } from "@/lib/utils";
 
-const allTeachers = [
-    { id: 1, name: "Dr. Sarah Johnson", subjects: ["Mathematics", "Physics"], rating: 4.9, experience: 10, experienceLabel: "10+ Years", image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400" },
-    { id: 2, name: "Prof. Michael Chen", subjects: ["Computer Science", "AI"], rating: 4.8, experience: 8, experienceLabel: "8 Years", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400" },
-    { id: 3, name: "Elena Rodriguez", subjects: ["English", "Spanish"], rating: 5.0, experience: 12, experienceLabel: "12 Years", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=400" },
-    { id: 4, name: "James Wilson", subjects: ["Chemistry", "Biology"], rating: 4.7, experience: 5, experienceLabel: "5 Years", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400" },
-    { id: 5, name: "Lisa Park", subjects: ["Music", "Piano"], rating: 4.9, experience: 15, experienceLabel: "15 Years", image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400" },
-    { id: 6, name: "David Miller", subjects: ["History", "Politics"], rating: 4.6, experience: 7, experienceLabel: "7 Years", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400" },
-];
+import { teachersData } from "@/data/data";
+
+const allTeachers = Object.values(teachersData).map(t => ({
+    ...t,
+    experienceLabel: t.experience,
+    experience: parseInt(t.experience) || 0
+}));
 
 const allSubjects = Array.from(new Set(allTeachers.flatMap(t => t.subjects))).sort();
 

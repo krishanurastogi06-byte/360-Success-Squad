@@ -65,11 +65,11 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center gap-3 text-zinc-400">
                                 <Phone className="text-secondary shrink-0" size={20} />
-                                <span>+91 12345 67890</span>
+                                <span>+91 9910339011</span>
                             </li>
                             <li className="flex items-center gap-3 text-zinc-400">
                                 <Mail className="text-secondary shrink-0" size={20} />
-                                <span>contact@successsquad.com</span>
+                                <span>success.squad360@gmail.com</span>
                             </li>
                         </ul>
                     </div>

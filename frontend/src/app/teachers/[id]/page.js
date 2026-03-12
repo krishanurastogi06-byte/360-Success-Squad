@@ -4,30 +4,11 @@ import { use } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import {
-    Star, GraduationCap, MapPin, Mail, Phone, WhatsApp,
-    MessageSquare, Calendar, ShieldCheck, ChevronRight,
-    User, Award, BookOpen, Quote
-} from "lucide-react";
+import { Star, GraduationCap, MapPin, Mail, Phone, WhatsApp, MessageSquare, Calendar, ShieldCheck, ChevronRight, User, Award, BookOpen, Quote } from "lucide-react";
 import SectionTag from "@/components/ui/SectionTag";
 import Card from "@/components/ui/Card";
 
-// Mock data mapping
-const teachersData = {
-    "1": {
-        id: 1,
-        name: "Dr. Sarah Johnson",
-        subjects: ["Mathematics", "Advanced Physics", "Statistics"],
-        rating: 4.9,
-        reviewsCount: 124,
-        experience: "10+ Years",
-        image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400",
-        about: "I am a dedicated educator with over a decade of experience in teaching complex mathematical and physical concepts. My approach focuses on conceptual clarity and real-world application, helping students excel in both school exams and competitive entrance tests.",
-        qualifications: ["PhD in Applied Mathematics", "MSc in Physics"],
-        availability: "Mon/Wed/Fri (4 PM - 8 PM)",
-        price: "$45/hr"
-    }
-};
+import { teachersData } from "@/data/data";
 
 export default function TeacherProfilePage({ params }) {
     const { id } = use(params);
@@ -80,7 +61,7 @@ export default function TeacherProfilePage({ params }) {
 
             {/* Main Content */}
             <section className="section-container pt-16">
-                <div className="grid lg:grid-cols-3 gap-12 items-start">
+                <div className="grid lg:grid-cols-3 gap-12 items-start relative">
 
                     {/* Left Column: Details */}
                     <div className="lg:col-span-2 space-y-12">
@@ -123,12 +104,27 @@ export default function TeacherProfilePage({ params }) {
                                 ))}
                             </ul>
                         </div>
+
+                        {/* Students Review */}
+                        <div className="space-y-6">
+                            <h2 className="text-3xl flex items-center gap-3">
+                                <MessageSquare className="text-secondary" /> Students Review
+                            </h2>
+
+                            {/* Review Placeholder */}
+                            <div className="bg-white p-8 rounded-[32px] border border-zinc-100 shadow-sm text-center">
+                                <MessageSquare size={40} className="mx-auto text-zinc-200 mb-4" />
+                                <p className="text-zinc-500 text-lg">
+                                    Student reviews and video testimonials will appear here.
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Right Column: Cards */}
-                    <aside className="space-y-8">
+                    <aside className="space-y-8 sticky top-24">
                         {/* Quick Actions Card */}
-                        <Card className="p-8 sticky top-24">
+                        <Card className="p-8">
                             <h3 className="text-2xl mb-6">Course Insights</h3>
                             <div className="space-y-6">
                                 <div className="flex justify-between items-center py-4 border-b border-zinc-50">

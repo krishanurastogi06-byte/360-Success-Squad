@@ -8,32 +8,12 @@ import SectionTag from "@/components/ui/SectionTag";
 import TeacherCard from "@/components/teachers/TeacherCard";
 import PageTransition from "@/components/ui/PageTransition";
 
-const featuredTeachers = [
-  {
-    id: 1,
-    name: "Dr. Sarah Johnson",
-    subjects: ["Mathematics", "Advanced Physics"],
-    rating: 4.9,
-    experience: "10+ Years",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400",
-  },
-  {
-    id: 2,
-    name: "Prof. Michael Chen",
-    subjects: ["Computer Science", "AI & ML"],
-    rating: 4.8,
-    experience: "8 Years",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400",
-  },
-  {
-    id: 3,
-    name: "Elena Rodriguez",
-    subjects: ["English Literature", "Spanish"],
-    rating: 5.0,
-    experience: "12 Years",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=400",
-  },
-];
+import { teachersData } from "@/data/data";
+
+const featuredTeachers = Object.values(teachersData).slice(0, 3).map(t => ({
+  ...t,
+  experience: t.experience
+}));
 
 export default function Home() {
   return (
